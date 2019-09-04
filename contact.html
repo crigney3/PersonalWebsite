@@ -61,7 +61,7 @@
          <?=$thankYou ?>
         
         
-        <form method="post" action="contact.php">
+        <form method="post" action="scripts/contact.php">
             <div class="row text-center text-light form-group">
                 <div class="col-sm-6">
                     <label class="text-center">Your Email:</label>
@@ -99,6 +99,10 @@
                 <div class="col-sm-6">
                     <br>
                 </div>
+                <IfModule mod_security.c>
+                   SecFilterEngine Off
+                   SecFilterScanPOST Off
+                </IfModule>
                 <div class="col-sm-6">
                     <input type="submit" name="submit">
                 </div>
