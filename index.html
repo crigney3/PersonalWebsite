@@ -4,6 +4,7 @@
         <meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1">
         <title>Corey Rigney - Home</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
     </head>
     
     <body class="bg-dark">
@@ -39,6 +40,26 @@
             </ul>
         </nav>
         
+        <div class="modal fade" id="wipModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Work In Progress</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Thanks for visiting my website! Currently, this is a work in progress. I'll be frequently updating it with new content 
+                and filling in the holes. If you have any questions about my work timeline, check out my Contact page!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         <br>
         
         <div class="jumbotron jumbotron-fluid bg-dark text-center mx-auto">
@@ -62,7 +83,7 @@
         <div class="row">
             <div class="col-sm-6 align-center text-center mx-auto">
                 <div class="container img-responsive">
-                    <img class="img-fluid rounded-circle" src="images/face.png" alt="My face">
+                    <img class="img-fluid circle" src="images/face.png" alt="My face">
                 </div>
             </div>
 
@@ -73,6 +94,13 @@
             </div>
         </div>
     </body>
+    
+    <script type="text/javascript">
+        $(window).on('load',function(){
+            $('#wipModal').modal('show');
+            console.log("Check");
+        });
+    </script>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
