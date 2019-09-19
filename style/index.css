@@ -1,0 +1,75 @@
+.circlecrop {
+    width:400px;
+    height:400px;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+#main-bar {
+    background-color: #1E2749;
+    color: #E4D9FF;
+}
+
+#jumbo {
+    background-color: #1E2749;
+    color: #E4D9FF;
+    width: 95%;
+}
+
+#centerContent {
+    background-color: #1E2749;
+    color: #E4D9FF;
+    width: 95%;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1E2749;
+    color: white;
+    text-align: center;
+  }
+
+  body {
+      background-color: #30343F;
+  }
+
+  .darkest {
+    color: #30343F;
+  }
+
+  .darker {
+    color: #1E2749;
+  }
+
+  .dark {
+      color: #273469;
+  }
+
+  .light {
+      color: #E4D9FF;
+  }
+
+  .lighter {
+      color: #FAFAFF;
+  }
+
+  a:link {
+      color: #E4D9FF;
+  }
+
+  a:visited {
+    color: #EB5160;
+  }
+
+  a:hover {
+      color: #FAFAFF;
+  }
+
+  a:active {
+      color: #273469;
+  }
+
+ 
