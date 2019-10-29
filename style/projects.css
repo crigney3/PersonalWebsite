@@ -1,3 +1,37 @@
+#projects {
+    display: grid;
+    grid-template-areas: 
+    "p1" "p2" "p3"
+    "p4" "p5" "p6";
+    grid-template-rows: auto auto;
+    grid-auto-columns: auto auto auto;
+}
+
+#p1 {
+    grid-area: p1;
+}
+#p2 {
+    grid-area: p2;
+}
+#p3 {
+    grid-area: p3;
+}
+#p4 {
+    grid-area: p4;
+}
+#p5 {
+    grid-area: p5;
+}
+#p6 {
+    grid-area: p6;
+}
+
+.projectbox {
+    width: 80%;
+    background-color: #E4D9FF;
+    margin: 0.5rem;
+}
+
 a:link {
     color: #E4D9FF;
 }
