@@ -16,8 +16,14 @@
     width: 95%;
 }
 
-#centerContent {
+main {
+    margin: auto;
+    width: 95%;
     background-color: #1E2749;
+}
+
+#centerContent {
+    
     color: #E4D9FF;
     width: 95%;
 }
