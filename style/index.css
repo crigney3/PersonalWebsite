@@ -38,44 +38,57 @@ footer {
     text-align: center;
   }
 
-  body {
-      background-color: #30343F;
-  }
+body {
+    background-color: #30343F;
+}
 
-  .darkest {
-    color: #30343F;
-  }
+.darkest {
+color: #30343F;
+}
 
-  .darker {
-    color: #1E2749;
-  }
+.darker {
+color: #1E2749;
+}
 
-  .dark {
-      color: #273469;
-  }
+.dark {
+    color: #273469;
+}
 
-  .light {
-      color: #E4D9FF;
-  }
+.light {
+    color: #E4D9FF;
+}
 
-  .lighter {
-      color: #FAFAFF;
-  }
+.lighter {
+    color: #FAFAFF;
+}
 
-  a:link {
-      color: #E4D9FF;
-  }
+a:link {
+    color: #E4D9FF;
+}
 
-  a:visited {
-    color: #EB5160;
-  }
+a:visited {
+color: #EB5160;
+}
 
-  a:hover {
-      color: #FAFAFF;
-  }
+a:hover {
+    color: #FAFAFF;
+}
 
-  a:active {
-      color: #273469;
-  }
+a:active {
+    color: #273469;
+}
+
+@media only screen and (max-width: 768px){
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    main{
+        padding-bottom: 10rem;
+    }
+    footer{
+
+    }
+}
 
  
