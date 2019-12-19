@@ -5,7 +5,8 @@
         <title>Corey Rigney - Home</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="style/index.css" />
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js">
+        </script>
     </head>
     
     <body class="">
@@ -67,30 +68,20 @@
         
         <div class="jumbotron jumbotron-fluid rounded-right rounded-left text-center mx-auto" id="jumbo">
             <div class="container">
-                <h1 class="text-info">Corey Rigney</h1>
+                <h1 class="lighter">Corey Rigney</h1>
             </div>
         </div>
         
-        <div class="row">
-            <div class="col-sm-2">
-                <br>
-            </div>
-            <div class="col-sm-8 text-center">
-                <h3 class="text-light">About Me</h3>
-            </div>
-            <div class="col-sm-2">
-                <br>
-            </div>
-        </div>
+        <br>
         
         <div class="row" id="centerContent">
-            <div class="col-sm-6 align-middle">
+            <div class="col-sm-4 align-middle mx-auto">
                 <div class="container text-center mx-auto d-block img-responsive">
                     <img class="img-fluid circlecrop" src="images/face.png" alt="My face">
                 </div>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-4 mx-auto">
                 <div class="container d-flex h-100">
                     <div class="row align-middle justify-content-center align-self-center text-center mx-auto text-white">
                         <h5>I am a 2nd year Game Design and Development student studying at the Rochester Institute of Technology. I'm a very 
@@ -100,6 +91,10 @@
             </div>
         </div>
         
+        <br>
+        <br>
+        <br>
+        
         <footer class="footer-copyright text-center py-3 light">
             <p>Contact me at: <a href="mailto: cbr7117@rit.edu">cbr7117@rit.edu</a></p>           
         </footer>
@@ -108,6 +103,19 @@
     <script type="text/javascript">
         $(window).on('load',function(){
             $('#wipModal').modal('show');
+        });
+        
+        var request = require("request"),
+            options = {
+              uri: 'https://coolors.co/app',
+              timeout: 2000,
+              followAllRedirects: true
+            };
+
+        request( options, function(error, response, body) {
+
+            console.log( response );
+
         });
     </script>
     
