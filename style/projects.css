@@ -1,4 +1,4 @@
-#projects {
+/*#projects {
     display: grid;
     grid-template-areas: 
     "p1" "p2" "p3"
@@ -24,12 +24,25 @@
 }
 #p6 {
     grid-area: p6;
+}*/
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .projectbox {
-    width: 80%;
+    width: 20%;
+    justify-content: center;
+    align-items: center;
     background-color: #E4D9FF;
     margin: 0.5rem;
+    padding: 1rem;
+}
+
+.projectbox img {
+    width: 80%;
 }
 
 a:link {
